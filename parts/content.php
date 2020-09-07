@@ -58,7 +58,7 @@
       </div>
       <?php endforeach; ?>
   </div>
-      <div class="line"></div>
+      <div class="line"> </div>
     <div class="row">
      <div class="col-md-12">
       <h1 class="new-title">ПОСЛЕДНИЕ НОВОСТИ ТЕХНИКУМА</h1>
@@ -85,7 +85,7 @@
              ?>
           </div>
         </div> 
-      <?php endforeach; ?>
+      <?php endforeach;?>
       </div>
       <div class="line"></div>
         <div class="btn-new  text-center">
