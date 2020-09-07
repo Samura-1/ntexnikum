@@ -41,9 +41,9 @@ session_start();
       </div>
       <div class="col-md-2">
         <?php
-        if ($_SESSION['login'][0]['status'] == 1):
+        if ($_SESSION['login_user'][0]['status'] == 1):
         ?>
-        <a href="../admin/index.php">Админ панель</a>
+        <a href="../admin/index.php">Админ панель </a><a href="../admin/unlogin.php">выход</a>
         <?php
         else:
          ?>

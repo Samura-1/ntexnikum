@@ -5,7 +5,7 @@ $admins = $connection->query("SELECT * FROM `blog` ORDER BY id DESC");
 $admins = $admins->FetchAll(PDO::FETCH_ASSOC);
 ?>
 <?php
-if ($_SESSION['login_user'][0]['status'] == 0):
+if ($_SESSION['login_user'][0]['status'] == 1):
 ?>
 <!DOCTYPE html>
 <html lang="en">
