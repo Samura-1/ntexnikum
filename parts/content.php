@@ -52,7 +52,7 @@
       ?>
       <div class="col-md-2 icon-prof">
         <div class="box-prof">
-          <a href="/Parts/proffesion.php?idprof=<?php echo $prof['idprof'] ?>"><img src="../Assets/img/icons/<?php echo $prof['image'] ?>" alt=""></a>
+          <a href="/parts/proffesion.php?idprof=<?php echo $prof['idprof'] ?>"><img src="../Assets/img/icons/<?php echo $prof['image'] ?>" alt=""></a>
          <h1><?php echo $prof['Name']; ?></h1>
         </div>
       </div>
@@ -74,14 +74,14 @@
               ?>     
         <div class="row blog-item">
           <div class="col-md-4 ">
-            <a href=""><img src="<?php echo $blogs['imge'] ?>" class="blog-posts-thumbnail" alt=""></a>
+            <a href="parts/news.php?id=<?php echo $blogs['id']?>"><img src="<?php echo $blogs['imge'] ?>" class="blog-posts-thumbnail" alt=""></a>
           </div>
           <div class="col col">
             <div class="blog-posts-date"><?php echo $blogs['datetime']; ?></div>
-            <h3 class="blog-posts-title"><?php echo '<a href=../page/News.php?id='.$blogs['id'].'>'.$blogs['title'].'...</a>'?></h3>
+            <h3 class="blog-posts-title"><?php echo '<a href=../parts/news.php?id='.$blogs['id'].'>'.$blogs['title'].'...</a>'?></h3>
             <p class="blog-posts-intro"><?php echo $blogs['introtext']; ?>...</p>
             <?php
-            echo ' <a class="blog-posts-btn" href=Parts/News.php?id='.$blogs['id'].'>Читать Далее</a>'
+            echo ' <a class="blog-posts-btn" href=parts/news.php?id='.$blogs['id'].'>Читать Далее</a>'
              ?>
           </div>
         </div> 
